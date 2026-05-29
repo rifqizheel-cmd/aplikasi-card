@@ -1,32 +1,19 @@
-import SearchBar from './SearchBar';
+import { FaClipboardList } from 'react-icons/fa';
 
-function Navbar({ searchTerm, setSearchTerm, selectedKategori, setSelectedKategori, kategoris }) {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-brand">
-          <h1>Fashion Outfit</h1>
-          <span>Daftar Koleksi Fashion</span>
+        <div className="navbar-logo">
+          <FaClipboardList className="logo-icon" />
+          <span>To-Do List</span>
         </div>
-        <SearchBar 
-          searchTerm={searchTerm} 
-          setSearchTerm={setSearchTerm} 
-        />
-        <div className="filter-kategori">
-          <select 
-            value={selectedKategori} 
-            onChange={(e) => setSelectedKategori(e.target.value)}
-            className="kategori-select"
-          >
-            <option value="">Semua Kategori</option>
-            {kategoris.map((kat) => (
-              <option key={kat} value={kat}>{kat}</option>
-            ))}
-          </select>
+        <div className="navbar-brand">
+          <span className="brand-text">Catatan Tugas</span>
         </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

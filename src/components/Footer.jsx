@@ -1,14 +1,16 @@
-function Footer() {
+import { FaHeart } from 'react-icons/fa';
+
+const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <p>&copy; 2026 Fashion Outfit. All rights reserved.</p>
-        <div className="footer-links">
-          <span>Made with React + Vite</span>
-        </div>
+      <div className="footer-content">
+        <p>
+          Made with <FaHeart className="heart-icon" /> using React + Vite
+        </p>
+        <p className="footer-year">2026</p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
