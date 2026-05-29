@@ -7,7 +7,7 @@ const Footer = () => {
         <p>
           Made with <FaHeart className="heart-icon" /> using React + Vite
         </p>
-        <p className="footer-year">2026</p>
+        <p className="footer-tagline">Fashion Outfit Collection 2026</p>
       </div>
     </footer>
   );

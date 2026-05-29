@@ -1,15 +1,15 @@
-import { FaClipboardList } from 'react-icons/fa';
+import { FaStore } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <FaClipboardList className="logo-icon" />
-          <span>To-Do List</span>
+          <FaStore className="logo-icon" />
+          <span>Fashion Outfit</span>
         </div>
         <div className="navbar-brand">
-          <span className="brand-text">Catatan Tugas</span>
+          <span className="brand-text">Koleksi Terlengkap</span>
         </div>
       </div>
     </nav>
